@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Gym Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+   
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">FitLife Gym</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#memberships">Memberships</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>ACHIEVE YOUR FITNESS GOALS</h1>
+            <p>Join FitLife Gym and transform your body and mind. Modern equipment, expert trainers, and a motivating
+                community await you!</p>
+            <button class="cta-btn"
+                onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Join Now</button>
+        </div>
+    </section>
+    <section class="about-section" id="about">
+        <div class="about-img">
+            <img src="images/well-equipped-gym-various-weights-barbells-exercise-equipment-high-resolutions-background-338248195.webp"
+                alt="FitLife Gym">
+        </div>
+        <div class="about-content">
+            <h2>About FitLife Gym</h2>
+            <p>At FitLife Gym, we believe fitness is a lifestyle. Our state-of-the-art facility offers a wide range of
+                equipment, group classes, and personal training to help you reach your goals—no matter your fitness
+                level.</p>
+            <p>Our certified trainers are here to guide, motivate, and support you every step of the way. Whether you
+                want to lose weight, build muscle, or just feel healthier, FitLife Gym is your partner in success.</p>
+        </div>
+    </section>
+    <section class="memberships-section" id="memberships">
+        <h2>Membership Plans</h2>
+        <div class="membership-cards">
+            <div class="membership-card">
+                <h3>1 Week Pass</h3>
+                <div class="price">₹249</div>
+                <ul>
+                    <li>Unlimited Gym Access</li>
+                    <li>Free Group Classes</li>
+                    <li>Locker Facility</li>
+                </ul>
+                <button class="join-btn"
+                    onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Get
+                    Started</button>
+            </div>
+            <div class="membership-card">
+                <h3>1 Month Membership</h3>
+                <div class="price">₹999</div>
+                <ul>
+                    <li>Unlimited Gym Access</li>
+                    <li>Personal Trainer (1 Session)</li>
+                    <li>Nutrition Guidance</li>
+                </ul>
+                <button class="join-btn"
+                    onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Get
+                    Started</button>
+            </div>
+            <div class="membership-card">
+                <h3>1 Year Membership</h3>
+                <div class="price">₹9999</div>
+                <ul>
+                    <li>Unlimited Gym Access</li>
+                    <li>Monthly Personal Training</li>
+                    <li>Exclusive Member Events</li>
+                </ul>
+                <button class="join-btn"
+                    onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Get
+                    Started</button>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to join or have questions? Fill out the form below and we’ll get in touch!</p>
+        <form class="contact-form"
+            onsubmit="event.preventDefault(); alert('Thank you for contacting us! We will reach out soon.'); this.reset();">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
